@@ -1,17 +1,18 @@
-var app = angular.module('aMod', ['ng-route']);
+var app = angular.module('aMod', ['ngRoute']);
 
 app.config(function($routeProvider){
   $routeProvider.when('/', {
-    templateUrl: '/',
+    templateUrl: 'views/loginview.html',
     controller: 'aController'
   });
 
-  $routeProvider.when('/loginview.html',{
-    templateUrl: 'views/views/loginview.html',
+  $routeProvider.when('/loginview',{
+    templateUrl: 'views/loginview.html',
     controller: 'aController'
   });
 
-  $routeProvider.when('/createaccount.html',{
+  $routeProvider.when('/createaccount',{
     templateUrl: 'views/createaccount.html',
     controller: 'aController'
   });
+});
