@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <script src = "script.js"></script>
     <link rel = 'stylesheet' href = "main.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://code.angularjs.org/1.3.16/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
     <title></title>
   </head>
-  <body>
-    <div>
+  <body nd-app="aMod">
+    <div ng-controller="aController" ng-view="">
       <p>Woah, Data!</p>
-      <button id = "login"></button>
-      <button id = "signup"><button>
+      <button id = "login">Login</button>
+      <button id = "signup">Register<button>
     </div>
   </body>
 </html>
