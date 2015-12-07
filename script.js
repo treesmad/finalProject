@@ -1,8 +1,8 @@
 var app = angular.module('aMod', ['ngRoute']);
-
+//changes views on main login page
 app.config(function($routeProvider){
   $routeProvider.when('/', {
-    templateUrl: 'views/loginview.html',
+    templateUrl: 'views/home.html',
     controller: 'aController'
   });
 

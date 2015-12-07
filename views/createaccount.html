@@ -1,8 +1,11 @@
-<html>
+<!-- <html ng-app="aMod" ng-controller="aController" ng-view=""> -->
 <head>
 	<title></title>
-	<link ref="stylesheet" href="main.css">
-
+	<!-- <link ref="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+  <script src = "script.js"></script>
+  <script src = "control.js"></script> -->
 </head>
 <body>
 	<form>
@@ -13,9 +16,11 @@
 		<input type="text" placeholder="email" ng-model="#"/>
 		<input type="password" placeholder="password" ng-model="#"/>
 		<input type="password" placeholder="newpassword" ng-model="#"/>
-		<button>Submit</button>
-	</form>
+      <a href="#/loginview">Submit</a>
 
+	</form>
+  <a href="#/createaccount">Register</a>
+  <a href="#/loginview">Login</a>
 	<script src="script.js"></script>
 
 </body>
