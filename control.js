@@ -2,7 +2,6 @@ app.controller('aController', function($scope){
   });
 
 app.controller('toHome', function($scope){
-
 });
 
 // app.config('toHome', function($routeProvider){

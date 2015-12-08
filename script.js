@@ -15,11 +15,6 @@ app.config(function($routeProvider){
     templateUrl: 'views/createaccount.html',
     controller: 'aController'
   });
-
-  $routeProvider.when('/app',{
-    templateUrl: 'views/createaccount.html',
-    controller: 'toHome'
-  });
 });
 
 function logout()
