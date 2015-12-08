@@ -47,12 +47,11 @@ function loginCallback(result)
             str += "Email:" + email + "<br>";
             document.getElementById("profile").innerHTML = str;
         });
-
     }
-
+    console.log(request);
 }
 function onLoadCallback()
 {
-    gapi.client.setApiKey('AIzaSyCVggIYbIw4bkHOvunJj8Muwqf6gw9CrzQ ');
+    gapi.client.setApiKey('AIzaSyCVggIYbIw4bkHOvunJj8Muwqf6gw9CrzQ');
     gapi.client.load('plus', 'v1',function(){});
 }
