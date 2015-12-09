@@ -7,7 +7,26 @@
   margin-top: 130px;
 }
 
-.likeabutton {
+#profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 5px solid black;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  background-color: rgba(236, 227, 227, 0.7);
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+a {
     text-decoration: none; font: menu;
     display: inline-block; padding: 2px 8px;
     background: ButtonFace; color: ButtonText;
@@ -15,7 +34,7 @@
     border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
 }
 
-.likeabutton:active {
+a:active {
     border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
 }
 
@@ -39,4 +58,10 @@ p {
 
 body {
   background-color: pink;
+}
+
+h1 {
+  width: 100%;
+  font-family: Helvetica;
+  text-align: center;
 }

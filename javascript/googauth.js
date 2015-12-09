@@ -1,10 +1,9 @@
-function logout()
-{
+function logout(){
     gapi.auth.signOut();
     location.reload();
 }
-function login()
-{
+
+function login(){
   var myParams = {
     'clientid' : '200772488238-3oe49iv349c5mj0g3avld1ch7igip7j5.apps.googleusercontent.com',
     'cookiepolicy' : 'single_host_origin',
@@ -17,42 +16,36 @@ function login()
 }
 
 
-function loginCallback(result)
-{
-    if(result['status']['signed_in'])
-    {
+function loginCallback(result){
+    if(result['status']['signed_in']){
         var request = gapi.client.plus.people.get(
         {
             'userId': 'me'
         });
-        request.execute(function (resp)
-        {
-            var email = '';
-            if(resp['emails'])
+request.execute(function (resp){
+    var email = '';
+if(resp['emails']){
+    for(i = 0; i < resp['emails'].length; i++){
+        if(resp['emails'][i]['type'] == 'account')
             {
-                for(i = 0; i < resp['emails'].length; i++)
-                {
-                    if(resp['emails'][i]['type'] == 'account')
-                    {
-                        email = resp['emails'][i]['value'];
-                    }
-                }
+                email = resp['emails'][i]['value'];
             }
-
-            var str = "Name:" + resp['displayName'] + "<br>";
-            str += "Image:" + resp['image']['url'] + "<br>";
-            str += "<img src='" + resp['image']['url'] + "' /><br>";
-
-            str += "URL:" + resp['url'] + "<br>";
-            str += "Email:" + email + "<br>"; 
-            str += "<a href='views/app.html'>Proceed To Home</a>"
-            document.getElementById("profile").innerHTML = str;
-        });
+        }
     }
+
+var str = "Signed in as: " + resp['displayName'];
+str += " <img src='" + resp['image']['url'] + "' /><br>";
+str +=  email + "<br>";
+document.getElementById("profile").innerHTML = str;
+var link = "<a href='views/app.html'>Proceed To Home</a>"
+document.getElementById("home").innerHTML = link;
+
+    });
+}
     console.log(request);
 }
-function onLoadCallback()
-{
+
+function onLoadCallback(){
     gapi.client.setApiKey('AIzaSyCVggIYbIw4bkHOvunJj8Muwqf6gw9CrzQ');
     gapi.client.load('plus', 'v1',function(){});
 }
