@@ -45,6 +45,7 @@ function loginCallback(result)
 
             str += "URL:" + resp['url'] + "<br>";
             str += "Email:" + email + "<br>";
+            str += "<a href='views/app.html'>Proceed To Home</a>" 
             document.getElementById("profile").innerHTML = str;
         });
     }

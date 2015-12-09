@@ -1,6 +1,6 @@
 .yeah {
   width: 70%;
-  background-color: rgba(236, 227, 227, 0.2);
+  background-color: rgba(236, 227, 227, 0.7);
   margin: 0 auto;
   height: 500px;
   border: 5px white solid;
@@ -38,5 +38,5 @@ p {
 }
 
 body {
-  background-color: black;
+  background-color: pink;
 }
