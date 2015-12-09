@@ -1,4 +1,4 @@
-// Google api console clientID and apiKey 
+// Google api console clientID and apiKey
 
  var clientId = '200772488238-3oe49iv349c5mj0g3avld1ch7igip7j5.apps.googleusercontent.com';
  var apiKey = 'AIzaSyCVggIYbIw4bkHOvunJj8Muwqf6gw9CrzQ';
@@ -40,9 +40,9 @@ var resource = {
                     "responseStatus":"needsAction",
                     "comment":"This is my demo event",
                     "additionalGuests":3
-                    
+
             },
-            {    
+            {
                 "email":"attendee2@gmail.com",
                     "displayName":"Marry",
                     "organizer":true,
@@ -60,10 +60,8 @@ function makeApiCall(){
 gapi.client.load('calendar', 'v3', function () { // load the calendar api (version 3)
                 var request = gapi.client.calendar.events.insert
                 ({
-                    'calendarId': 'circuspro21@gmail.com', 
+                    'calendarId': 'cmparkkila@gmail.com', 
 // calendar ID which id of Google Calendar where you are creating events. this can be copied from your Google Calendar user view.
 
                     "resource": resource  // above resource will be passed here
-                });                
-
-                
+                });
