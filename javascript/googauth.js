@@ -39,14 +39,12 @@ function loginCallback(result)
                 }
             }
 
-            var str = "Name:" + resp['displayName'] + "<br>";
-            str += "Image:" + resp['image']['url'] + "<br>";
-            str += "<img src='" + resp['image']['url'] + "' /><br>";
-
-            str += "URL:" + resp['url'] + "<br>";
-            str += "Email:" + email + "<br>"; 
-            str += "<a href='views/app.html'>Proceed To Home</a>"
+            var str = "Signed in as: " + resp['displayName'];
+            str += " <img src='" + resp['image']['url'] + "' /><br>";
+            str +=  email + "<br>";
             document.getElementById("profile").innerHTML = str;
+            var link = "<a href='views/app.html'>Proceed To Home</a>"
+            document.getElementById("home").innerHTML = link;
         });
     }
     console.log(request);
