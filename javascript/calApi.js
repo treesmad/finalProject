@@ -22,10 +22,10 @@
 var resource = {
             "summary": "My Event",
             "start": {
-                "dateTime": today
+                "dateTime": "today"
             },
             "end": {
-                "dateTime": twoHoursLater
+                "dateTime": "twoHoursLater"
             },
             "description":"We are organizing events",
             "location":"US",
@@ -65,3 +65,5 @@ gapi.client.load('calendar', 'v3', function () { // load the calendar api (versi
 
                     "resource": resource  // above resource will be passed here
                 });
+});
+}
