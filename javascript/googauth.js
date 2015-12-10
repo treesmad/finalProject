@@ -40,8 +40,7 @@ document.getElementById("profile").innerHTML = str;
 var link = "<a href='views/app.html'>Proceed To Home</a>"
 document.getElementById("home").innerHTML = link;
 var newMail = email.substr(0, email.length-10);
-var newLink = "<iframe src='https://calendar.google.com/calendar/embed?src='" + newMail + "%40gmail.com&ctz=America/New_York style='border: 0' width='800' height='600' frameborder='0' scrolling='no&output=embed'></iframe>"
-document.getElementById("divifm").innerHTML = newLink;
+document.getElementById("frame").setAttribute('src', "'https://calendar.google.com/calendar/embed?src='" + newMail + "'%40gmail.com&ctz=America/New_York'")
     });
 }
     console.log(request);
