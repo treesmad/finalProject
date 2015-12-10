@@ -21,7 +21,12 @@ function loginCallback(result){
         var request = gapi.client.plus.people.get(
         {
             'userId': 'me'
-        });
+
+//loads homepage immediately on authorization
+//   gapi.auth.authorize(myParams, ‘future-ng-switch’)};)
+
+    });
+
 request.execute(function (resp){
     var email = '';
 if(resp['emails']){
