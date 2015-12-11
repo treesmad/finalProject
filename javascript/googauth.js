@@ -1,3 +1,4 @@
+var newMail = '';
 function logout(){
     gapi.auth.signOut();
     location.reload();
@@ -16,7 +17,7 @@ function login(){
     'scope' : 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read'
   };
   gapi.auth.signIn(myParams);
-  // console.log(response);
+  // console.log(res1nse);
 }
 
 
@@ -44,7 +45,8 @@ str +=  email + "<br>";
 document.getElementById("profile").innerHTML = str;
 var link = "<a href='#/app'>Proceed To Home</a>"
 document.getElementById("home").innerHTML = link;
-$scope.newMail = email.substr(0, email.length-10);
+newMail = email.substr(0, email.length-10);
+// document.getElementById("calendar").src = "https://calendar.google.com/calendar/embed?src=eightpears%40gmail.com&ctz=America/New_York";
 
   });
 }
@@ -55,4 +57,8 @@ $scope.newMail = email.substr(0, email.length-10);
 function onLoadCallback(){
     gapi.client.setApiKey('AIzaSyCVggIYbIw4bkHOvunJj8Muwqf6gw9CrzQ');
     gapi.client.load('plus', 'v1',function(){});
+}
+
+function changeFrame(){
+  document.getElementById("calendar").src = "https://calendar.google.com/calendar/embed?src="+ newMail +"%40gmail.com&ctz=America/New_York";
 }
