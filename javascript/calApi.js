@@ -22,7 +22,7 @@
 var resource = {
             "summary": "My Event",
             "start": {
-                "dateTime": 'today'
+                "dateTime": today
             },
             "end": {
                 "dateTime": twoHoursLater
