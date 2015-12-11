@@ -42,9 +42,9 @@ var str = "Signed in as: " + resp['displayName'];
 str += " <img src='" + resp['image']['url'] + "' /><br>";
 str +=  email + "<br>";
 document.getElementById("profile").innerHTML = str;
-var link = "<a href='#/app'>Proceed To Home</a>"
+var link = "<a href='#/app.html'>Proceed To Home</a>"
 document.getElementById("home").innerHTML = link;
-$scope.newMail = email.substr(0, email.length-10);
+var newMail = email.substr(0, email.length-10);
 
   });
 }
