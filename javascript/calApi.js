@@ -22,10 +22,10 @@
 var resource = {
             "summary": "My Event",
             "start": {
-                "dateTime": today
+                "dateTime": "today"
             },
             "end": {
-                "dateTime": twoHoursLater
+                "dateTime": "twoHoursLater"
             },
             "description":"We are organizing events",
             "location":"US",
