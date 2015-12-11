@@ -9,16 +9,16 @@ app.config(function($routeProvider){
 
   $routeProvider.when('/loginview',{
     templateUrl: 'views/loginview.html',
-    controller: 'aController'
+    controller: 'bController'
   });
 
   $routeProvider.when('/createaccount',{
     templateUrl: 'views/createaccount.html',
-    controller: 'aController'
+    controller: 'cController'
   });
 
   $routeProvider.when('/app',{
     templateUrl: 'views/app.html',
-    controller: 'aController'
+    controller: 'toHome'
   });
 });
