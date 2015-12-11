@@ -28,7 +28,7 @@ function loginCallback(result){
         {
             'userId': 'me'
         });
-request.execute(function (resp){
+request.execute(function (resp, $scope){
     var email = '';
 if(resp['emails']){
     for(i = 0; i < resp['emails'].length; i++){
