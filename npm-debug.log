@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bubble-chart' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose config Skipping project config: /Users/chelseamparkkila/.npmrc. (matches userconfig)
+5 verbose install initial load of /Users/chelseamparkkila/package.json
+6 verbose installManyTop reading scoped package data from /Users/chelseamparkkila/node_modules/express/package.json
+7 verbose installManyTop reading scoped package data from /Users/chelseamparkkila/node_modules/heroku/package.json
+8 info package.json heroku@0.1.3 No license field.
+9 verbose readDependencies loading dependencies from /Users/chelseamparkkila/package.json
+10 silly cache add args [ 'bubble-chart', null ]
+11 verbose cache add spec bubble-chart
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'bubble-chart',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'bubble-chart',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: '*',
+12 silly cache add   type: 'range' }
+13 silly addNamed bubble-chart@*
+14 verbose addNamed "*" is a valid semver range for bubble-chart
+15 silly addNameRange { name: 'bubble-chart', range: '*', hasData: false }
+16 silly mapToRegistry name bubble-chart
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/bubble-chart
+20 verbose addNameRange registry:https://registry.npmjs.org/bubble-chart not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/bubble-chart
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 1:56:04 PM
+24 verbose request id d5ae898296ee9d68
+25 http request GET https://registry.npmjs.org/bubble-chart
+26 http 404 https://registry.npmjs.org/bubble-chart
+27 verbose headers { 'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '2',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Fri, 11 Dec 2015 18:55:02 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-ord1729-ORD',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1449860102.439583,VS0,VE41' }
+28 silly get cb [ 404,
+28 silly get   { 'content-type': 'application/json',
+28 silly get     'cache-control': 'max-age=0',
+28 silly get     'content-length': '2',
+28 silly get     'accept-ranges': 'bytes',
+28 silly get     date: 'Fri, 11 Dec 2015 18:55:02 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     age: '0',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-ord1729-ORD',
+28 silly get     'x-cache': 'MISS',
+28 silly get     'x-cache-hits': '0',
+28 silly get     'x-timer': 'S1449860102.439583,VS0,VE41' } ]
+29 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/bubble-chart
+29 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+29 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+29 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+29 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+29 verbose stack     at emitTwo (events.js:87:13)
+29 verbose stack     at Request.emit (events.js:172:7)
+29 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+29 verbose stack     at emitOne (events.js:82:20)
+29 verbose stack     at Request.emit (events.js:169:7)
+29 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+30 verbose statusCode 404
+31 verbose pkgid bubble-chart
+32 verbose cwd /Users/chelseamparkkila/Desktop/finalProject
+33 error Darwin 12.6.0
+34 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "bubble-chart"
+35 error node v4.2.2
+36 error npm  v2.14.7
+37 error code E404
+38 error 404 Registry returned 404 for GET on https://registry.npmjs.org/bubble-chart
+38 error 404
+38 error 404 'bubble-chart' is not in the npm registry.
+38 error 404 You should bug the author to publish it (or use the name yourself!)
+38 error 404
+38 error 404 Note that you can also install from a
+38 error 404 tarball, folder, http url, or git url.
+39 verbose exit [ 1, true ]
