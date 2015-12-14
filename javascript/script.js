@@ -21,4 +21,8 @@ app.config(function($routeProvider){
     templateUrl: 'views/app.html',
     controller: 'toHome'
   });
+  // $routeProvider.when('/dataview', {
+  //   templateUrl: 'dataview.html',
+  //   controller: 'aController'
+  // });
 });

@@ -57,6 +57,7 @@ a:active {
 
 button {
   margin: 0px 100px 0px 400px;
+  padding-bottom: 3px;
 }
 
 p {
@@ -73,4 +74,25 @@ h1 {
   width: 100%;
   font-family: Helvetica;
   text-align: center;
+}
+
+input {
+  display: block;
+  font-size: 15px;
+}
+
+.bubbleChart {
+  width: 700px;
+  margin-top: 20px;
+}
+
+.butterino{
+  position: absolute;
+  left: -190px;
+  top:115px;
+  width: 200px;
+}
+
+.buttoninput {
+  width: 200px;
 }
