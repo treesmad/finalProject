@@ -14,7 +14,7 @@
   <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
   <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
   <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
-  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+  <script src="javascript/click.js"></script>
   <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
   <script src="javascript/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
@@ -35,35 +35,14 @@
   		<li><a href="#/">Import Calendar</a></li>
   	</ul></nav>
 
-<div class = "buttoninput">
-<input type="text" placeholder="Bubble One" ng-model="bubbleOne"/>
-<input type="text" placeholder="Bubble Two" ng-model="bubbleTwo"/>
-<input type="text" placeholder="Bubble Three" ng-model="bubbleThree"/>
-<input type="text" placeholder="Bubble Four" ng-model="bubbleFour"/>
-<input type="text" placeholder="Bubble Five" ng-model="bubbleFive"/>
-<input type="text" placeholder="Bubble Six" ng-model="bubbleSix"/>
-<input type="text" placeholder="Bubble Seven" ng-model="bubbleSeven"/>
-<input type="text" placeholder="Bubble Eight" ng-model="bubbleEight"/>
-<input type="text" placeholder="Bubble Nine" ng-model="bubbleNine"/>
-</div>
-<div class = "butterino">
-  <button ng-click="changeBubble()" >Update</button>
-  <button ng-click="changeBubble2()">Update</button>
-  <button ng-click="changeBubble3()">Update</button>
-  <button ng-click="changeBubble4()">Update</button>
-  <button ng-click="changeBubble5()">Update</button>
-  <button ng-click="changeBubble6()">Update</button>
-  <button ng-click="changeBubble7()">Update</button>
-  <button ng-click="changeBubble8()">Update</button>
-  <button ng-click="changeBubble9()">Update</button>
-</div>
+
 
   <style>
     .bubbleChart {
       width: 700px;
       height: 700px;
       margin: 0 auto;
-      margin-top: -130px;
+      margin-top: 0px;
     }
     .bubbleChart svg{
       background: pink;

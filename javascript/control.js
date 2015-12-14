@@ -3,15 +3,15 @@ app.controller('aController', function($scope){
 
 
    var items = [
-     {text: "One", count: "236"},
-     {text: "Two", count: "382"},
-     {text: "Three", count: "170"},
-     {text: "Four", count: "123"},
-     {text: "Five", count: "3"},
-     {text: "Six", count: "170"},
-     {text: "Seven", count: "382"},
-     {text: "Eight", count: "10"},
-     {text: "Nine", count: "170"},
+     {text: "  ", count: "0"},
+     {text: "   ", count: "1"},
+     {text: "    ", count: "2"},
+     {text: "     ", count: "3"},
+     {text: "      ", count: "4"},
+     {text: "       ", count: "5"},
+     {text: "        ", count: "6"},
+     {text: "         ", count: "7"},
+     {text: "          ", count: "8"},
    ];
 
 
