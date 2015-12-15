@@ -3,7 +3,7 @@ app.controller('aController', function($scope){
 
 
    var items = [
-     {text: "  ", count: "0"},
+     {text: " ", count: "0"},
      {text: "   ", count: "1"},
      {text: "    ", count: "2"},
      {text: "     ", count: "3"},
