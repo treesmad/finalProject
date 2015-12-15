@@ -110,7 +110,7 @@ ul {
 
 li a {
     display: block;
-    color: #000;
+    color: black;
     padding: 8px 0 8px 16px;
     text-decoration: none;
 }
@@ -121,7 +121,7 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-    background-color: #555;
+    background-color: ;
     color: white;
 }
 
@@ -166,10 +166,17 @@ h1 {
   text-align: center;
 }
 
+#calendar {
+  position: absolute;
+  right: 120px;
+  top: 125px;
+}
 
 .bubbleChart {
   width: 700px;
   margin-top: 20px;
+  position: absolute;
+  right: 400px;
 }
 
 .butterino{
