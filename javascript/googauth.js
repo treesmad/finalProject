@@ -43,7 +43,7 @@ var str = "Signed in as: " + resp['displayName'];
 str += " <img src='" + resp['image']['url'] + "' /><br>";
 str +=  email + "<br>";
 document.getElementById("profile").innerHTML = str;
-var link = "<a href='#/app'>Proceed To Home</a>"
+var link = "<a href='#/app' class='btn' id='absolu'>Proceed To Home</a>"
 document.getElementById("home").innerHTML = link;
 newMail = email.substr(0, email.length-10);
 // document.getElementById("calendar").src = "https://calendar.google.com/calendar/embed?src=eightpears%40gmail.com&ctz=America/New_York";

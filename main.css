@@ -1,10 +1,56 @@
 /*.landingBody {
   width: 70%;
-  background-color: rgba(236, 227, 227, 0.7);
+  background-color: rgba(236, 227, 227, 0.4);
   margin: 0 auto;
   height: 500px;
   border: 5px white solid;
   margin-top: 130px;
+  position: absolute;
+  right: 270px;
+  top: 70px;
+}*/
+
+.btn {
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  border-radius: 25px;
+  text-shadow: 1px 1px 3px #a1a1a1;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 60px;
+  background: rgba(236, 227, 227, 0.4);
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #8998a1;
+  background-image: -webkit-linear-gradient(top, #8998a1, #4d4d4d);
+  background-image: -moz-linear-gradient(top, #8998a1, #4d4d4d);
+  background-image: -ms-linear-gradient(top, #8998a1, #4d4d4d);
+  background-image: -o-linear-gradient(top, #8998a1, #4d4d4d);
+  background-image: linear-gradient(to bottom, #8998a1, #4d4d4d);
+  text-decoration: none;
+}
+
+#absolute {
+  position: absolute;
+  left: 600px;
+  top:270px;
+
+}
+
+#absolut {
+  position: absolute;
+  top:270px;
+  right: 650px;
+}
+
+#absolu {
+  position: absolute;
+  top: 500px;
+  left: 690px;
 }
 
 .hoho {
@@ -67,7 +113,11 @@ p {
 }
 
 body {
-  background-color: pink;
+
+}
+
+.movetext {
+  margin-bottom: -200px;
 }
 
 h1 {
@@ -76,10 +126,6 @@ h1 {
   text-align: center;
 }
 
-input {
-  display: block;
-  font-size: 15px;
-}
 
 .bubbleChart {
   width: 700px;
@@ -95,7 +141,7 @@ input {
 
 .buttoninput {
   width: 200px;
-}*/
+}
 
 .cb-slideshow,
 .cb-slideshow:after {
@@ -228,7 +274,7 @@ input {
     -ms-animation-delay: 30s;
     animation-delay: 30s;
 }
-/* Animation for the slideshow images */
+
 @-webkit-keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
@@ -274,7 +320,7 @@ input {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-/* Animation for the title */
+
 @-webkit-keyframes titleAnimation {
     0% { opacity: 0 }
     8% { opacity: 1 }
@@ -310,7 +356,7 @@ input {
     19% { opacity: 0 }
     100% { opacity: 0 }
 }
-/* Show at least something when animations not supported */
+
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
 }
