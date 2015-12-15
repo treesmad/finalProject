@@ -36,8 +36,8 @@
 
 #absolute {
   position: absolute;
-  left: 600px;
-  top:270px;
+  left: 800px;
+  top:330px;
 
 }
 
@@ -175,8 +175,6 @@ h1 {
 .bubbleChart {
   width: 700px;
   margin-top: 20px;
-  position: absolute;
-  right: 400px;
 }
 
 .butterino{
