@@ -1,19 +1,15 @@
-app.controller('aController', function($scope){
+var items = [
+{text: " ", count: 0}
+];
+
+app.controller('aController', function($scope, calService){
+  var calInfo = {}
+  calService.then(function(response){
+    console.log(response);
+    items = response.data.items;
+  });
+  console.log(calService);
    });
-
-
-   var items = [
-     {text: " ", count: "0"},
-     {text: "   ", count: "1"},
-     {text: "    ", count: "2"},
-     {text: "     ", count: "3"},
-     {text: "      ", count: "4"},
-     {text: "       ", count: "5"},
-     {text: "        ", count: "6"},
-     {text: "         ", count: "7"},
-     {text: "          ", count: "8"},
-   ];
-
 
 app.controller('toHome', function($scope){
   $scope.changeBubble = function(){
