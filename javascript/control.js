@@ -1,5 +1,3 @@
-//app.module('')
-
 app.controller('aController', function($scope, calService){
 
 });

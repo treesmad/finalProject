@@ -6,6 +6,7 @@ app.factory('calService', function($http){
   var calInfo = {};
 //  while(newmail!=undefined){
     return $http.get('https://www.googleapis.com/calendar/v3/calendars/eightpears@gmail.com/events?key=AIzaSyCVggIYbIw4bkHOvunJj8Muwqf6gw9CrzQ')
+    //return $http.get('https://www.googleapis.com/calendar/v3/calendars/')+newMail+('@gmail.com/events?key=AIzaSyCVggIYbIw4bkHOvunJj8Muwqf6gw9CrzQ')
     .then(function(data){
         console.log(data);
         calInfo = data.data.items;
