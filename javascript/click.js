@@ -1,7 +1,3 @@
-/**
- * central-click.js
- */
-
 d3.svg.BubbleChart.define("central-click", function(options) {
   var self = this;
 
