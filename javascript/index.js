@@ -9,7 +9,10 @@ setTimeout(function(){
       data: {
         items,
         eval: function (item) {return item.count;},
-        classed: function (item) {return item.text.split(" ").join("");}
+        classed: function (item) {return item.text.split(" ").join("");},
+        color: function(){
+          return "#bada55"
+        }
       },
       plugins: [
         {
