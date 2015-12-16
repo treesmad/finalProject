@@ -60,4 +60,4 @@ function onLoadCallback(){
 
 function changeFrame(){
   document.getElementById("calendar").src = "https://calendar.google.com/calendar/embed?src="+ newMail +"%40gmail.com&ctz=America/New_York";
-}
+};
