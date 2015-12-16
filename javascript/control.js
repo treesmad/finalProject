@@ -1,15 +1,14 @@
-var items = [
-{text: " ", count: 0}
-];
-
 app.controller('aController', function($scope, calService){
   var calInfo = {}
-  calService.then(function(response){
-    console.log(response);
-    items = response.data.items;
+  calService.then(function(data){
+
   });
-  console.log(calService);
+
    });
+
+
+   
+
 
 app.controller('toHome', function($scope){
   $scope.changeBubble = function(){
