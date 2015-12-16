@@ -8,7 +8,6 @@ function handleClientLoad() {
     window.setTimeout(checkAuth, 1);
 }
 
-
 function checkAuth() {
     gapi.auth.authorize({ client_id: clientId, scope: scopes, immediate: true }, handleAuthResult);
 }

@@ -22,21 +22,21 @@ function login(){
 
 
 function loginCallback(result){
+  if(result['status']['signed_in']){
+    var request = gapi.client.plus.people.get(
+      {
+        'userId': 'me'
+      });
 
-    if(result['status']['signed_in']){
-        var request = gapi.client.plus.people.get(
-        {
-            'userId': 'me'
-        });
 request.execute(function (resp, $scope){
-    var email = '';
-if(resp['emails']){
+  var email = '';
+  if(resp['emails']){
     for(i = 0; i < resp['emails'].length; i++){
-        if(resp['emails'][i]['type'] == 'account')
-            {
-                email = resp['emails'][i]['value'];
-            }
+      if(resp['emails'][i]['type'] == 'account')
+        {
+          email = resp['emails'][i]['value'];
         }
+      }
     }
 
 var str = "Signed in as: " + resp['displayName'];
