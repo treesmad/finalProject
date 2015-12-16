@@ -2,10 +2,10 @@
  * central-click.js
  */
 
-d3.svg.BubbleChart.define("central-click", function (options) {
+d3.svg.BubbleChart.define("central-click", function(options) {
   var self = this;
 
-  self.setup = (function (node) {
+  self.setup = (function(node) {
     var original = self.setup;
     return function (node) {
       var fn = original.apply(this, arguments);

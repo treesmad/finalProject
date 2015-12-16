@@ -1,30 +1,29 @@
-var newTask = "";
+
 var task = "";
+
+var bubble = angular.module('bubble',[]);
 
 app.factory('calService', function($http){
 var calInfo = {};
 return $http.get('https://www.googleapis.com/calendar/v3/calendars/eightpears@gmail.com/events?key=AIzaSyCR3-ptjHE-_douJsn8o20oRwkxt-zHStY')
   .then(function(data){
-    calInfo = data;
-    newTask = data.data.items[0].summary;
+    console.log(data);
+    calInfo = data.data.items;
+    calInfo.forEach(function(event, index){
+      items.push({text: event.summary, count: index, start: event.start.date});
+    });
+    task = data.data.items[0].summary;
   })
 });
 
 var items = [
-  {text: " ", count: "0"},
-  {text: "   ", count: "1"},
-  {text: "    ", count: "2"},
-  {text: "     ", count: "3"},
-  {text: "      ", count: "4"},
-  {text: "       ", count: "5"},
-  {text: "        ", count: "6"},
-  {text: "         ", count: "7"},
-  {text: "          ", count: "8"},
+{text:'Haircut',count:'3', start: '2015-12-12'}
 ];
 
 
 function importThings(){
-  task = newTask;
+
   items[0].text = task;
+  items.push({text: task, count: 9});
   console.log(task);
   }

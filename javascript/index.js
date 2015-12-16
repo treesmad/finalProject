@@ -15,9 +15,12 @@ setTimeout(function(){
         {
           name: "central-click",
           options: {
-            text: "(See more detail)",
+            text: function(item){
+              console.log(item);
+              return item.item.start;
+            },
             style: {
-              "font-size": "12px",
+              "font-size": "20px",
               "font-style": "italic",
               "font-family": "Source Sans Pro, sans-serif",
               //"font-weight": "700",
@@ -35,7 +38,7 @@ setTimeout(function(){
           options: {
             format: [
               {// Line #0
-                textField: "count",
+                textField: "start.date",
                 classed: {count: true},
                 style: {
                   "font-size": "28px",
