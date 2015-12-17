@@ -1,11 +1,13 @@
 .btn {
   -webkit-border-radius: 25;
   -moz-border-radius: 25;
+  display: inline-block;
+  margin: 0 auto;
   border-radius: 25px;
   text-shadow: 1px 1px 3px #a1a1a1;
   font-family: Georgia;
   color: #000000;
-  font-size: 60px;
+  font-size: 20px;
   background: rgba(236, 227, 227, 0.4);
   padding: 10px 20px 10px 20px;
   border: solid #000000 5px;

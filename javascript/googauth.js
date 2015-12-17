@@ -47,9 +47,13 @@ document.getElementById("home").innerHTML = link;
 newMail = email.substr(0, email.length-10);
 // document.getElementById("calendar").src = "https://calendar.google.com/calendar/embed?src=eightpears%40gmail.com&ctz=America/New_York";
 
+console.log(email);
+
+
   });
 }
-    console.log(request);
+
+console.log(request);
 
 }
 
@@ -61,3 +65,4 @@ function onLoadCallback(){
 function changeFrame(){
   document.getElementById("calendar").src = "https://calendar.google.com/calendar/embed?src="+ newMail +"%40gmail.com&ctz=America/New_York";
 };
+

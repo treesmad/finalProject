@@ -1,3 +1,5 @@
+//ideally wrap this in an angular controller
+
 d3.svg.BubbleChart.define("central-click", function(options) {
   var self = this;
 
@@ -7,8 +9,8 @@ d3.svg.BubbleChart.define("central-click", function(options) {
       var fn = original.apply(this, arguments);
       self.event.on("click", function(node) {
         if (node.selectAll("text.central-click")[0].length === 1) {
-          var val = prompt("Which number bubble have you selected?")
-          var popeye = prompt("Hello there!\nWhat do you want this bubble to say?");
+//          var val = prompt("Which number bubble have you selected?")
+          var popeye = prompt("Add details?");
             if(popeye != null) {
               items[val].text = popeye;
             }

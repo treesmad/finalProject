@@ -10,8 +10,10 @@ setTimeout(function(){
         items,
         eval: function (item) {return item.count;},
         classed: function (item) {return item.text.split(" ").join("");},
-        color: function(){
-          return "#bada55"
+        color: function(item){
+          return item.color;
+//make and name a function in service that does this, call it here: if(currentDate-event.Date = < ms in a day); etc
+          
         }
       },
       plugins: [
@@ -85,4 +87,4 @@ setTimeout(function(){
         }]
     });
   });
-},1000);
+},500);
